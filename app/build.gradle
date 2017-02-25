@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.bugtags.library.plugin'
+//apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+//apply plugin: 'com.antfortune.freeline'
+//2.支持Lambda
+apply plugin: 'me.tatarka.retrolambda'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.0.0'
+    }
+}
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.chailijun.mtime"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        //支持Lambda
+//        jackOptions.enabled = true
+
+//        ndk {
+//            // 设置支持的 SO 库构架，一般而言，取你所有的库支持的构架的`交集`。
+//            abiFilters 'armeabi' ,"armeabi-v7a", 'arm64-v8a' ,'x86_64', 'x86'  // ,'mips', 'mips64'
+//        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //3.支持Lambda
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+//sourceSets {
+//    main {
+//        jniLibs.srcDirs = ['libs']
+//    }
+//}
+
+
+greendao {
+    schemaVersion 1001
+    daoPackage 'com.chailijun.mtime.db.gen'
+    targetGenDir 'src/main/java'
+}
+//freeline {
+//
+//    hack true
+//
+//}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //    compile 'com.android.support:appcompagradlew initFreelinet-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.3.0'
+    compile 'com.android.support:cardview-v7:24.2.1'
+
+//    compile "com.google.guava:guava:$rootProject.guavaVersion"
+
+    // greendao
+    compile 'org.greenrobot:greendao:3.0.1'
+    compile 'org.greenrobot:greendao-generator:3.0.0'
+
+    // Rxjava
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+
+    // retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'
+
+    // okhttp
+    compile 'com.squareup.okhttp3:okhttp:3.1.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+
+    //gson
+    compile 'com.google.code.gson:gson:2.5'
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+//    //内存泄漏检测工具
+//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+
+    compile project(':convenientbanner')
+    compile project(':baseadapter')
+    compile files('libs/eventbus-2.4.0.jar')
+    compile project(':BaseRecyclerViewAdapterHelperLibrary')
+    compile project(':material-spinner-1.0.5')
+    compile files('libs/BaiduLBS_Android.jar')
+}

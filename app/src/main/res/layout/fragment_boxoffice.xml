@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/imageview_border"
+        tools:text="2016年12月19日内地日票房(人民币)"
+        android:id="@+id/summary"
+        android:textColor="@color/colorTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:textSize="@dimen/text_size_14"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_boxoffice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

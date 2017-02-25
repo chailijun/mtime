@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="@dimen/user_image_comment"
+        android:layout_height="@dimen/user_image_comment"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/userImage"
+        android:text="匿名"
+        android:textColor="@color/colorTitle3"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/userImage"
+        android:gravity="end"
+        android:text="0个小时前"
+        android:textColor="@color/colorTitle3"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:maxEms="200"
+        android:ellipsize="end"
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nickname"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/userImage"
+        android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/icon_comment_recycler_item_36x36"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="@string/reply"
+        android:textColor="@color/colorTitle2"
+        android:textSize="@dimen/text_size_12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:layout_below="@id/reply"
+        android:background="@color/colorLine" />
+</RelativeLayout>

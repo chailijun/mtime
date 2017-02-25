@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_bg_head"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:id="@+id/head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/white" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_movie_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_movie_name"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:background="@android:color/white"
+        android:padding="@dimen/line_2_dp">
+
+        <ImageView
+            android:id="@+id/iv_movie_img"
+            android:layout_width="110dp"
+            android:layout_height="165dp"
+            android:background="@drawable/img_default"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/isHasVideo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_movie_name_en"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_bg_head"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/rl_movie_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12"
+        tools:text="English name" />
+
+
+    <TextView
+        android:id="@+id/tv_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_bg_head"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/rl_movie_img"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18"
+        tools:text="电影名字"/>
+
+    <TextView
+        android:id="@+id/tv_movie_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_movie_name_en"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/rl_movie_img"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_12"
+        tools:text="140分钟" />
+
+    <TextView
+        android:id="@+id/tv_movie_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_movie_duration"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/rl_movie_img"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_12"
+        tools:text="爱情/剧情" />
+
+    <TextView
+        android:id="@+id/tv_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_movie_type"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/rl_movie_img"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_12"
+        tools:text="2016年11月11日中国上映" />
+
+    <TextView
+        android:id="@+id/tv_comment_special"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_release_date"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/rl_movie_img"
+        android:drawableLeft="@drawable/quot_film_on"
+        android:drawablePadding="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone"
+        tools:text="一句话简评"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_movie_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rl_movie_img"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/rl_movie_img"
+        android:orientation="horizontal">
+
+        <com.chailijun.mtime.customview.BorderTextView
+            android:id="@+id/tag_dmax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="中国巨幕"
+            android:textColor="@color/colorMovieType"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.chailijun.mtime.customview.BorderTextView
+            android:id="@+id/tag_imax3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="IMAX 3D"
+            android:textColor="@color/colorMovieType"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.chailijun.mtime.customview.BorderTextView
+            android:id="@+id/tag_3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="3D"
+            android:textColor="@color/colorMovieType"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.chailijun.mtime.customview.BorderTextView
+            android:id="@+id/tag_imax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMAX 2D"
+            android:textColor="@color/colorMovieType"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_overall_rating"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tv_movie_duration"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/marginRight"
+        android:background="@color/colorBGYingping"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_20"
+        tools:text="8.8" />
+
+
+</RelativeLayout>

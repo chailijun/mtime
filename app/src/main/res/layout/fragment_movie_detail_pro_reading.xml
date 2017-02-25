@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--票房-->
+            <include layout="@layout/fragment_movie_detail_pro_reading_box_office" />
+
+            <!--新闻-->
+            <include layout="@layout/fragment_movie_detail_pro_reading_news" />
+
+            <!--事件-->
+            <include layout="@layout/fragment_movie_detail_pro_reading_events" />
+
+            <!--制作公司等信息-->
+            <include layout="@layout/fragment_movie_detail_pro_reading_other" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_below="@id/tv_title"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_find_news_index">
+
+
+    <TextView
+        android:id="@+id/mainland_boxoffice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="@drawable/item_onclick_bg_selector"
+        android:drawableLeft="@drawable/icon_find_mainland"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/mainland_boxoffice"
+        android:textColor="@color/C_E87250"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:layout_width="@dimen/line_0dot8_dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorLine" />
+
+    <TextView
+        android:drawablePadding="8dp"
+        android:id="@+id/gloable_boxoffice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/item_onclick_bg_selector"
+        android:drawableLeft="@drawable/icon_find_globle"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/global_boxofice"
+        android:textColor="@color/C_5683CC"
+        android:textSize="@dimen/text_size_16" />
+
+
+</LinearLayout>

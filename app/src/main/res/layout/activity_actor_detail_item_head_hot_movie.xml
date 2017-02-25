@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hot_movie"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include layout="@layout/divier"/>
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingRight="@dimen/marginRight"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hot_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/hot_play"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/hot_play"
+            android:background="@drawable/img_default"
+            android:id="@+id/hot_play_movie_img"
+            android:layout_width="80dp"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:layout_alignTop="@id/hot_play_movie_img"
+            android:text="天下无贼"
+            android:id="@+id/tv_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_bg_head"
+            android:layout_toRightOf="@id/hot_play_movie_img"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_rating_final"
+            android:layout_alignBaseline="@id/tv_movie_title"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_movie_title"
+            android:textSize="@dimen/text_size_14"
+            android:padding="2dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorBGYingping"
+            android:text="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_movie_type"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/tv_movie_title"
+            android:layout_toRightOf="@id/hot_play_movie_img"
+            android:textSize="@dimen/text_size_14"
+            android:text="喜剧/剧情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_role_name"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/tv_movie_type"
+            android:layout_toRightOf="@id/hot_play_movie_img"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_alignBottom="@id/hot_play_movie_img"
+            android:layout_toRightOf="@id/hot_play_movie_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/colorOrange"
+                android:text="￥"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/tv_ticket_price"
+                android:textSize="@dimen/text_size_26"
+                android:textColor="@color/colorOrange"
+                android:text="37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/colorOrange"
+                android:text="起"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignBottom="@id/hot_play_movie_img"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:id="@+id/btn_sale"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@android:color/white"
+            android:background="@drawable/actor_detail_hot_playing_buy_icon"
+            android:text="@string/select_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

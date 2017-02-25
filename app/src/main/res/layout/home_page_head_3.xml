@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorLine2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/hottest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/home_entry0"
+            android:gravity="center_horizontal"
+            android:text="@string/time_hot_top" />
+
+        <TextView
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/boxoffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/home_entry1"
+            android:gravity="center_horizontal"
+            android:text="@string/ticket_top" />
+
+        <TextView
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/trailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/home_entry2"
+            android:gravity="center_horizontal"
+            android:text="@string/newTrailer" />
+
+        <TextView
+            android:id="@+id/live"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/home_entry4"
+            android:gravity="center_horizontal"
+            android:text="@string/wonderful_live" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:background="@color/colorLine" />
+
+</LinearLayout>

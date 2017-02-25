@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorLine2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:text="@string/movie_shop"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/my_home_center_arrow"
+            android:gravity="end"
+            android:text="@string/all_goods"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/iv_goods1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/goods1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_size_14"
+                tools:text="闪购专区" />
+
+            <TextView
+                android:id="@+id/goods1_title_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goods1_title"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:textSize="@dimen/text_size_12"
+                tools:text="精选好货 每日更新" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/line_0dot8_dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:id="@+id/iv_goods3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitCenter" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_0dot8_dp"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_goods4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/goods4_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginLeft"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/text_size_14"
+                        tools:text="黑豹无线鼠标" />
+
+                    <TextView
+                        android:id="@+id/goods4_title_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/goods4_title"
+                        android:layout_marginLeft="@dimen/marginLeft"
+                        android:textSize="@dimen/text_size_12"
+                        tools:text="个性十足" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/line_0dot8_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLine" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_goods5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/goods5_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginLeft"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/text_size_14"
+                        tools:text="龙珠孙悟空" />
+
+                    <TextView
+                        android:id="@+id/goods5_title_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/goods5_title"
+                        android:layout_marginLeft="@dimen/marginLeft"
+                        android:textSize="@dimen/text_size_12"
+                        tools:text="抢先购" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/iv_goods2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/goods2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_size_14"
+                tools:text="奇异博士专区" />
+
+            <TextView
+                android:id="@+id/goods2_title_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goods2_title"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:textSize="@dimen/text_size_12"
+                tools:text="新品抢先购" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/line_0dot8_dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorLine" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/iv_goods6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/goods6_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_size_14"
+                tools:text="奇异博士专区" />
+
+            <TextView
+                android:id="@+id/goods6_title_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goods6_title"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:textSize="@dimen/text_size_12"
+                tools:text="新品抢先购" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:background="@color/colorLine" />
+
+
+</LinearLayout>

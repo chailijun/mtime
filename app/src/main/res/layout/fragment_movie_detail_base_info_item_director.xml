@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_director"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/divier"
+        android:id="@+id/item_divider"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_divider"
+        android:paddingLeft="@dimen/marginLeft">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_all_actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_divider"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:drawableRight="@drawable/my_home_center_arrow"
+        android:gravity="end"
+        android:text="@string/all"
+        android:textColor="@color/colorGrayText"
+        android:textSize="@dimen/text_size_15" />
+
+
+</RelativeLayout>

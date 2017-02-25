@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--新闻详细下方的"相关资料"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorLine2" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:text="@string/relations_info"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_18" />
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingLeft="@dimen/marginLeft"
+        android:id="@+id/recyclerview_relations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

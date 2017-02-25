@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--新闻详细下方的"相关阅读"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorLine2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/relations_reads"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/my_home_center_arrow"
+            android:gravity="end"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:focusable="true"
+        android:id="@+id/recyclerview_reads"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<LinearLayout
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="《奇异博士》韩国票房三连冠"/>
+        <TextView
+            android:textColor="@color/colorTitle3"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="观影人次逼近500万 本土片绝地保龄首周居亚"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_0dot8_dp"
+            android:background="@color/colorLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="《奇异博士》韩国票房三连冠"/>
+        <TextView
+            android:textColor="@color/colorTitle3"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="观影人次逼近500万 本土片绝地保龄首周居亚"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_0dot8_dp"
+            android:background="@color/colorLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="《奇异博士》韩国票房三连冠"/>
+        <TextView
+            android:textColor="@color/colorTitle3"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="观影人次逼近500万 本土片绝地保龄首周居亚"/>
+
+    </LinearLayout>-->
+
+
+
+</LinearLayout>

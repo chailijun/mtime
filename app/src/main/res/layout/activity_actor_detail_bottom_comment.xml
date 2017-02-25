@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorCommentBG"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    tools:showIn="@layout/activity_actor_detail">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_comments_edit_background"
+            android:hint="@string/write_comment"
+            android:paddingLeft="2dp"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:button="@android:color/transparent"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/actor_detail_like_selector"
+                android:text="@string/like"
+                android:textColor="@drawable/actor_detail_like_text_selector"
+                android:textSize="@dimen/text_size_10" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@android:color/transparent"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/actor_detail_unlike_selector"
+                android:text="@string/unlike"
+                android:textColor="@drawable/actor_detail_unlike_text_selector"
+                android:textSize="@dimen/text_size_10" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

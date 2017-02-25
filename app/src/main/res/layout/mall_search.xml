@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:alpha="0"
+        android:id="@+id/search_bg"
+        android:background="@color/colorHead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:alpha="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/mall_home_scan" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_comments_edit_background"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:hint="@string/mall_home_edit_hint"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorEditHint"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/mall_home_cart_icon" />
+    </LinearLayout>
+</RelativeLayout>

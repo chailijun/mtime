@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_page_head_0"/>
+    <!--<include layout="@layout/home_page_head_live"/>-->
+    <include layout="@layout/fragment_hot_play_movies"/>
+    <include layout="@layout/home_page_head_mall_recommends"/>
+    <include layout="@layout/home_page_head_3"/>
+    <include layout="@layout/home_page_head_adv_list"/>
+    <include layout="@layout/home_page_list_head"/>
+
+</LinearLayout>

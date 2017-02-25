@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.chailijun.mtime.city.SearchCityActivity">
+
+    <include layout="@layout/head_only_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imageview_border"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.chailijun.mtime.customview.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/city_search_region_background"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:hint="@string/input_cityname"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorGrayText"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--城市列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_citylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--索引-->
+        <com.chailijun.mtime.customview.IndexBar
+            android:id="@+id/indexBar"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            app:indexBarPressBackground="@color/partTranslucent"
+            app:indexBarTextSize="14sp"
+            app:indexTextColor="@color/colorTitle2" />
+
+        <TextView
+            android:id="@+id/tvSideBarHint"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_side_bar_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:visibility="gone"
+            tools:text="A"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_city_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/no_found"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

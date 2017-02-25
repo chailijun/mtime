@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_actor_expriences"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:background="@android:color/white">
+
+    <include layout="@layout/divier" />
+
+    <RelativeLayout
+        android:id="@+id/more_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/actor_expriences"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/my_home_center_arrow"
+            android:gravity="end"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/all"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingRight="@dimen/marginRight">
+
+        <ImageView
+            android:id="@+id/expriences_img"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/img_default_300x200"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/expriences_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/expriences_img"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingRight="20dp"
+            android:text="《还珠格格》崭露头角"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/expriences_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/expriences_title"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/expriences_img"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4dp"
+            android:maxLines="2"
+            android:paddingRight="20dp"
+            android:text="《还珠格格》\n崭露头角"
+            android:textColor="@color/colorTitle2"
+            android:textSize="@dimen/text_size_16" />
+
+    </RelativeLayout>
+
+</LinearLayout>

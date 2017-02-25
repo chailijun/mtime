@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="@dimen/marginLeft"
+    android:paddingRight="@dimen/marginRight"
+    android:background="@drawable/item_onclick_bg_selector">
+
+    <TextView
+        android:id="@+id/top_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="不可错过的20部美丽生灵" />
+
+    <TextView
+        android:id="@+id/tv_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_list_name"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingRight="10dp"
+        android:textColor="@color/colorTitle2"
+        android:textSize="@dimen/text_size_14"
+        tools:text="森林之王分分钟反差萌，天空中自由翱翔的翅膀" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/right_arrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLine" />
+
+</RelativeLayout>

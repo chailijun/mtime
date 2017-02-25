@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chailijun.mtime.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:background="@drawable/home_bottombar_line" />
+
+    <RadioGroup
+        android:background="@color/white"
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/bottom_tag_style"
+            android:background="@drawable/rb_home_drawable_selector"
+            android:text="@string/homepage" />
+
+        <RadioButton
+            android:id="@+id/rb_payticket"
+            style="@style/bottom_tag_style"
+            android:background="@drawable/rb_payticket_drawable_selector"
+            android:text="@string/payticket" />
+
+        <RadioButton
+            android:id="@+id/rb_mall"
+            style="@style/bottom_tag_style"
+            android:background="@drawable/rb_mall_drawable_selector"
+            android:text="@string/mall" />
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            style="@style/bottom_tag_style"
+            android:background="@drawable/rb_find_drawable_selector"
+            android:text="@string/find" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/bottom_tag_style"
+            android:background="@drawable/rb_user_drawable_selector"
+            android:text="@string/user" />
+    </RadioGroup>
+</LinearLayout>

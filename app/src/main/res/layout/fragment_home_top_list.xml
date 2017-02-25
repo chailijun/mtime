@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/marginLeft"
+    android:layout_marginRight="@dimen/marginLeft"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tag"
+        style="@style/TagStyle"
+        android:background="@color/colorBGBangdan"
+        android:text="@string/bangdan" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="既然行为由恶驱动，那么棋局中的所有主角都是恶人，整个棋盘就像一个修罗场。" />
+
+    <TextView
+        android:id="@+id/tv_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:textColor="@color/colorTitle2"
+        android:textSize="@dimen/text_size_14"
+        tools:text="既然行为由恶驱动，那么棋局中的所有主角都是恶人，整个棋盘就像一个修罗场。" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.chailijun.mtime.customview.WithTagImageView
+                android:id="@+id/iv_movie1_img"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/imageview_border"
+                android:padding="@dimen/line_1_dp"
+                android:scaleType="centerCrop"
+                app:TagColor="@color/colorBGBangdan"
+                app:TagText="1" />
+
+
+            <TextView
+                android:id="@+id/tv_movie1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_16"
+                tools:text="告白" />
+
+            <TextView
+                android:id="@+id/tv_movie1_decade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_16"
+                tools:text="（2010）" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.chailijun.mtime.customview.WithTagImageView
+                android:id="@+id/iv_movie2_img"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/imageview_border"
+                android:padding="@dimen/line_1_dp"
+                android:scaleType="centerCrop"
+                app:TagColor="@color/colorBGYingping"
+                app:TagText="2" />
+
+            <TextView
+                android:id="@+id/tv_movie2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_16"
+                tools:text="告白" />
+
+            <TextView
+                android:id="@+id/tv_movie2_decade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_16"
+                tools:text="（2010）" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.chailijun.mtime.customview.WithTagImageView
+                android:id="@+id/iv_movie3_img"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/imageview_border"
+                android:padding="@dimen/line_1_dp"
+                android:scaleType="centerCrop"
+                app:TagColor="@color/colorHome"
+                app:TagText="3" />
+
+            <TextView
+                android:id="@+id/tv_movie3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_16"
+                tools:text="告白" />
+
+            <TextView
+                android:id="@+id/tv_movie3_decade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_16"
+                tools:text="（2010）" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:layout_marginTop="@dimen/marginLeft"
+        android:background="@color/colorLine" />
+</LinearLayout>

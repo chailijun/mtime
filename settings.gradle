@@ -1,0 +1,1 @@
+include ':app', ':convenientbanner', ':baseadapter', ':BaseRecyclerViewAdapterHelperLibrary', ':material-spinner-1.0.5'

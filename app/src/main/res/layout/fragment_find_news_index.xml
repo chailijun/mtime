@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_default_300x200"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/news_history"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/news_history"
+        android:background="@drawable/btn_findnews_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_img"
+        android:background="@drawable/translucent_bg"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20"
+        tools:text="《深海浩劫》定档预告片" />
+
+    <include layout="@layout/fragment_find_news_boxoffice_top"
+        android:id="@+id/boxoffice_top"/>
+
+    <View
+        android:layout_below="@id/boxoffice_top"
+        android:background="@color/colorLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"/>
+
+</RelativeLayout>

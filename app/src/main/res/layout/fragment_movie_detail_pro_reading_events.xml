@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/ll_event">
+
+    <include layout="@layout/divier"/>
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingRight="@dimen/marginRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/event_total"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/my_home_center_arrow"
+            android:gravity="end"
+            android:text="@string/all"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_15" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/text_size_16"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/movie_event_num_shape"
+            android:text="1"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/event_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="@dimen/marginRight"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

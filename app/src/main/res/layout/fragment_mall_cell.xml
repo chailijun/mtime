@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:paddingRight="2dp"
+            android:layout_weight="1"
+            android:id="@+id/cellA"
+            android:scaleType="centerCrop"
+            android:background="@drawable/img_default"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            tools:src="@drawable/cell_a"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:paddingBottom="2dp"
+                android:layout_weight="1"
+                android:id="@+id/cellC_0"
+                android:scaleType="centerCrop"
+                android:background="@drawable/img_default_300x200"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:src="@drawable/cell_c_0"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/cellC_1"
+                android:scaleType="centerCrop"
+                android:background="@drawable/img_default_300x200"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:src="@drawable/cell_c_1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:paddingTop="2dp"
+        android:id="@+id/cellB"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ad_default_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:src="@drawable/cell_b"/>
+
+</LinearLayout>

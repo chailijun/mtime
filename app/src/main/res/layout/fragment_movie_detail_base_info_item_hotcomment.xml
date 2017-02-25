@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_hotcomment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/divier" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hotcomment_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingRight="@dimen/marginRight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/hot_comment"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/all_hot_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/my_home_center_arrow"
+            android:gravity="end"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/all"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/no_hotcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:gravity="end"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/no_hotcomment"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_hotcomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingRight="@dimen/marginRight"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/more_comment"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/text_size_14"
+        tools:text="@string/all_comment" />
+
+</LinearLayout>

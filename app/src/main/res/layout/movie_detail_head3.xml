@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    app:layout_collapseMode="parallax"
+    tools:showIn="@layout/activity_movie_detail3">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_bg_head"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/actor_detail_top_background" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@id/img_bg_head"
+            android:background="@android:color/white" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_movie_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_movie_name"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:layout_marginRight="@dimen/marginRight"
+            android:background="@android:color/white"
+            android:padding="@dimen/line_2_dp">
+
+            <ImageView
+                android:id="@+id/iv_movie_img"
+                android:layout_width="110dp"
+                android:layout_height="165dp"
+                android:background="@drawable/img_default"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_play" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_movie_name_en"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_bg_head"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/rl_movie_img"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="I Am Not Madame BovaryI Am Not Madame Bovary"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_12" />
+
+
+        <TextView
+            android:id="@+id/tv_movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_bg_head"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/rl_movie_img"
+            android:text="我不是潘金莲"
+            android:textColor="@android:color/transparent"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_movie_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_movie_name_en"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/rl_movie_img"
+            android:text="0分钟"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_movie_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_movie_duration"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/rl_movie_img"
+            android:text="剧情/喜剧"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_movie_type"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/rl_movie_img"
+            android:text="2016年11月18日中国上映"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_comment_special"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_release_date"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/rl_movie_img"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="荒诞戏里说现实"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/text_size_12" />
+
+        <!--<TextView
+            android:id="@+id/tv_movie_tag"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/tv_comment_special"
+            android:layout_toRightOf="@id/rl_movie_img"
+            android:textColor="@color/colorMovieType"
+            android:textSize="@dimen/text_size_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国巨幕" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_movie_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_comment_special"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/rl_movie_img"
+            android:orientation="horizontal">
+
+            <com.chailijun.mtime.customview.BorderTextView
+                android:id="@+id/tag_dmax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="中国巨幕"
+                android:textColor="@color/colorMovieType"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="gone" />
+
+            <com.chailijun.mtime.customview.BorderTextView
+                android:id="@+id/tag_imax3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="IMAX 3D"
+                android:textColor="@color/colorMovieType"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="gone" />
+
+            <com.chailijun.mtime.customview.BorderTextView
+                android:id="@+id/tag_3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="3D"
+                android:textColor="@color/colorMovieType"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="gone" />
+
+            <com.chailijun.mtime.customview.BorderTextView
+                android:id="@+id/tag_imax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMAX 2D"
+                android:textColor="@color/colorMovieType"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_overall_rating"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/tv_movie_duration"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/marginRight"
+            android:background="@color/colorBGYingping"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_20" />
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

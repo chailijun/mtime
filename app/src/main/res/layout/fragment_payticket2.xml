@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/colorHead">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/title_btn_back_background" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/title_search_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:layout_marginLeft="50dp"
+        android:background="@color/colorHead"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.chailijun.mtime.customview.ClearEditText
+            android:id="@+id/cet_cinema"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_comments_edit_background"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/title_bar_search_button_clear_background"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_hint2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorEditHint"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorHead"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        style="@style/PayticketTabLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_head"
+        android:background="@color/colorCommentBG"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/PayticketTabLayout" />
+
+    <RadioGroup
+        android:id="@+id/rg_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabs"
+        android:background="@drawable/imageview_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/all_cinema"
+            style="@style/cinema_category_style"
+            android:gravity="center"
+            android:text="@string/all" />
+
+        <View
+            android:layout_width="@dimen/line_0dot8_dp"
+            android:layout_height="15dp"
+            android:background="@color/colorLine" />
+
+        <RadioButton
+            android:id="@+id/price_cinema"
+            style="@style/cinema_category_style"
+            android:gravity="center"
+            android:text="@string/price" />
+
+        <View
+            android:layout_width="@dimen/line_0dot8_dp"
+            android:layout_height="15dp"
+            android:background="@color/colorLine" />
+
+        <RadioButton
+            android:id="@+id/distance_cinema"
+            style="@style/cinema_category_style"
+            android:gravity="center"
+            android:text="@string/nearby" />
+
+        <View
+            android:layout_width="@dimen/line_0dot8_dp"
+            android:layout_height="15dp"
+            android:background="@color/colorLine" />
+
+        <RadioButton
+            android:id="@+id/filter_cinema"
+            style="@style/cinema_category_style"
+            android:drawableLeft="@drawable/cinema_category_filter_selector"
+            android:drawablePadding="4dp"
+            android:paddingLeft="16dp"
+            android:text="@string/filter" />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cinema"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rg_filter"
+        android:scrollbars="vertical" />
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/loading_failed"
+        layout="@layout/loading_failed"
+        android:visibility="gone" />
+
+</RelativeLayout>

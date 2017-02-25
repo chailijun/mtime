@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/movie_detail_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="#33000000"
+        android:id="@+id/img_bg_head"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:id="@+id/head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_alignBottom="@id/head_bg"
+        android:id="@+id/iv_actor_img"
+        android:layout_width="110dp"
+        android:layout_height="165dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:background="@drawable/img_default"
+        android:padding="@dimen/line_1_dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:text="Lijun Chai"
+        android:id="@+id/tv_actor_name_en"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_bg_head"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/iv_actor_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_12" />
+
+
+    <TextView
+        android:text="柴丽军"
+        android:id="@+id/tv_actor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_bg_head"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/iv_actor_img"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:text="屌丝|程序员"
+        android:id="@+id/tv_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_actor_name_en"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_actor_img"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:text="1991-00-00 中国 安徽 安庆"
+        android:id="@+id/tv_birthday_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_profession"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_actor_img"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:layout_below="@id/tv_birthday_address"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_actor_img"
+        android:id="@+id/tv_actor_ratingfinal"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@drawable/favourite_person_item_heart_new"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/like_percent"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/text_size_12" />
+
+    <com.chailijun.mtime.customview.ExpandableTextView
+        android:id="@+id/actor_introduce"
+        android:background="@android:color/white"
+        android:layout_below="@id/head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingRight="@dimen/marginRight"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="简介：人物介绍\n人物介绍"
+            android:id="@+id/tv_actor_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/arrow_down" />
+    </com.chailijun.mtime.customview.ExpandableTextView>
+
+
+</RelativeLayout>

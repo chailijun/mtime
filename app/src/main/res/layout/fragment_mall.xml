@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--<com.chailijun.mtime.customview.MyScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            &lt;!&ndash;mall/index&ndash;&gt;
+            <include layout="@layout/fragment_mall_navigator"/>
+
+            <include layout="@layout/divier"/>
+
+            <include layout="@layout/fragment_mall_cell"/>
+
+            <include layout="@layout/divier"/>
+
+            &lt;!&ndash;特别主题商品&ndash;&gt;
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_specialTopicList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            &lt;!&ndash;主题商品&ndash;&gt;
+            <include layout="@layout/fragment_mall_topic"/>
+
+            &lt;!&ndash;分类商品&ndash;&gt;
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorLine3">
+                <View
+                    android:layout_centerInParent="true"
+                    android:background="#C3C3C3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_0dot8_dp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorLine3"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/home_recommended_daily_icon"
+                    android:textColor="@color/maybeLikeGoods"
+                    android:textSize="@dimen/text_size_12"
+                    android:text="@string/maybe_like_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            &lt;!&ndash;推荐商品RecommendProducts&ndash;&gt;
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_RecommendProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </com.chailijun.mtime.customview.MyScrollView>-->
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/loading"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/gotop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/gotop"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <include layout="@layout/mall_search" />
+
+</RelativeLayout>

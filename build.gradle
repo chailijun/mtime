@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+//        classpath 'com.bugtags.library:bugtags-gradle:latest.integration'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+
+        //1.支持Lambda
+        classpath 'me.tatarka:gradle-retrolambda:3.2.0'
+//        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        //classpath 'com.antfortune.freeline:gradle:0.8.3'
+
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+        //Bmob的maven仓库地址--必填
+        //maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext{
+
+    guavaVersion = '18.0'
+}

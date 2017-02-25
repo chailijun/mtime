@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="112dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/marginLeft"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:padding="@dimen/line_1_dp"
+        android:background="@drawable/img_default_45x45"
+        android:id="@+id/goods_img"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/goods_name"
+        android:layout_marginTop="6dp"
+        android:textSize="@dimen/text_size_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="现货 长城刺绣缎面夹克"/>
+
+    <TextView
+        android:textColor="@color/colorOrange"
+        android:id="@+id/goods_price"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/text_size_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="￥399"/>
+
+</LinearLayout>

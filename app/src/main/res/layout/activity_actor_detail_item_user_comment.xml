@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include layout="@layout/activity_actor_detail_item_head_user_comment_tag"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/first_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="@dimen/user_image_comment"
+            android:layout_height="@dimen/user_image_comment"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/userImage"
+            android:text="匿名"
+            android:textColor="@color/colorTitle3"
+            android:textSize="@dimen/text_size_12" />
+
+
+
+        <TextView
+            android:id="@+id/user_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_nickname"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/userImage"
+            android:ellipsize="end"
+            android:maxEms="200"
+            android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <TextView
+            android:id="@+id/user_praiseCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/user_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/assist1"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorTitle2"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/user_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/user_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/icon_comment"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="@string/reply"
+            android:textColor="@color/colorTitle2"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/user_commentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/user_reply"
+            android:layout_alignLeft="@id/user_content"
+            android:layout_below="@id/user_content"
+            android:gravity="end"
+            android:text="0个小时前"
+            android:textColor="@color/colorTitle3"
+            android:textSize="@dimen/text_size_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_0dot8_dp"
+            android:layout_below="@id/user_reply"
+            android:background="@color/colorLine" />
+    </RelativeLayout>
+
+
+</LinearLayout>

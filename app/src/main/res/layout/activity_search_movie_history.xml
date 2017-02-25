@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/filter_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginLeft"
+        android:text="@string/search_history"
+        android:textColor="@color/colorTitle2"
+        android:textSize="@dimen/text_size_14" />
+
+    <com.chailijun.mtime.customview.MyListView
+        android:id="@+id/lv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+</LinearLayout>

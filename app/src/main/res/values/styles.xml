@@ -1,0 +1,167 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/shape_dialog_bg</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Dialog.Button">
+        <item name="android:textColor">@color/colorHome</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:background">@drawable/dialog_btn_selector</item>
+    </style>
+
+    <style name="MovieDetailTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorOrange</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <!--<item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>-->
+        <item name="tabSelectedTextColor">@color/colorOrange</item>
+        <item name="tabTextColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="PayticketTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">@android:color/darker_gray</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="PayticketTabLayout2" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorHome</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@color/colorHome</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="PopupWindowTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorHome</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@color/colorHome</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="TagStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:paddingLeft">@dimen/tag_paddingLeft_Right</item>
+        <item name="android:paddingRight">@dimen/tag_paddingLeft_Right</item>
+        <item name="android:paddingTop">@dimen/tag_paddingTop_Bottom</item>
+        <item name="android:paddingBottom">@dimen/tag_paddingTop_Bottom</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+    <style name="AppTheme.NoActionBar.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="myCollapsingToolbarLayout">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--播放器防止横竖屏切换时闪屏-->
+    <style name="noAnimation_Theme" parent="android:Theme">
+            <item name="android:windowAnimationStyle">@style/noAnimation</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowFullscreen">true</item>
+            <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="noAnimation">
+            <item name="android:activityOpenEnterAnimation">@null</item>
+            <item name="android:activityOpenExitAnimation">@null</item>
+            <item name="android:activityCloseEnterAnimation">@null</item>
+            <item name="android:activityCloseExitAnimation">@null</item>
+            <item name="android:taskOpenEnterAnimation">@null</item>
+            <item name="android:taskOpenExitAnimation">@null</item>
+            <item name="android:taskCloseEnterAnimation">@null</item>
+            <item name="android:taskCloseExitAnimation">@null</item>
+            <item name="android:taskToFrontEnterAnimation">@null</item>
+            <item name="android:taskToFrontExitAnimation">@null</item>
+            <item name="android:taskToBackEnterAnimation">@null</item>
+            <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <style name="cinema_category_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@drawable/cinema_category_selector</item>
+    </style>
+
+    <style name="bottom_tag_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@drawable/bottom_textcolor_drawable_selector</item>
+    </style>
+
+    <style name="movie_sort_radiobutton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/movie_sort_bg_selector</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:drawableRight">@drawable/movie_sort_down_selector</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@drawable/movie_sort_text_selector</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <!--popupWindow-->
+    <style name="anim_menu_bottombar">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="mypopwindow_anim_style">
+    <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+    <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+</resources>

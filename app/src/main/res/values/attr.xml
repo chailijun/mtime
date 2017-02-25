@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WithTagImageView">
+        <attr name="TagColor" format="color"/>
+        <attr name="TagText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="BorderTextView">
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="followTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextViewAttr">
+        <!-- 允许显示最大行数 -->
+        <attr name="maxExpandLines" format="integer"></attr>
+        <!-- 动画执行时间 -->
+        <attr name="duration" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="textLeft" format="string"/>
+        <attr name="textRight" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="drawable_switch" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" format="dimension"/>
+        <attr name="indexBarPressBackground" format="color" />
+        <attr name="indexTextColor" format="color"/>
+    </declare-styleable>
+
+    <!--以下属性的含义依次为：未选中时颜色、选中时颜色、指示器（圆）半径、两个指示器最外层表面之间的距离-->
+    <declare-styleable name="Indicator">space
+        <attr name="unSelectColor" format="color" />
+        <attr name="onSelectColor" format="color" />
+        <attr name="radius" format="dimension"/>
+        <attr name="space" format="dimension"/>
+    </declare-styleable>
+</resources>

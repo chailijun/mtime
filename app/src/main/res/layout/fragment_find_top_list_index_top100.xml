@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_title"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_find_top_list_index">
+
+    <TextView
+        android:id="@+id/mtime_top100"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/find_fixedtop100_img0"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="@string/time_toplist100"
+        android:textColor="@color/C_1498C9" />
+
+    <TextView
+        android:id="@+id/Chinese_movie_top100"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/find_fixedtop100_img1"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="@string/chinese_toplist100"
+        android:textColor="@color/C_3BC7C2" />
+
+    <TextView
+        android:id="@+id/global_boxoffice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/find_fixedtop100_img2"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="@string/globle_toplist100"
+        android:textColor="@color/C_FFC12D" />
+
+</LinearLayout>

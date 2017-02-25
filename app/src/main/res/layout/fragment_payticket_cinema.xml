@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imageview_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/cinema_category_style"
+            android:gravity="center"
+            android:text="@string/all" />
+
+        <View
+            android:layout_width="@dimen/line_0dot8_dp"
+            android:layout_height="15dp"
+            android:background="@color/colorLine" />
+
+        <RadioButton
+            style="@style/cinema_category_style"
+            android:gravity="center"
+            android:text="@string/discount" />
+
+        <View
+            android:layout_width="@dimen/line_0dot8_dp"
+            android:layout_height="15dp"
+            android:background="@color/colorLine" />
+
+        <RadioButton
+            style="@style/cinema_category_style"
+            android:gravity="center"
+            android:text="@string/nearby" />
+
+        <View
+            android:layout_width="@dimen/line_0dot8_dp"
+            android:layout_height="15dp"
+            android:background="@color/colorLine" />
+
+        <RadioButton
+            style="@style/cinema_category_style"
+            android:drawableLeft="@drawable/cinema_category_filter_selector"
+            android:drawablePadding="4dp"
+            android:paddingLeft="16dp"
+            android:text="@string/filter" />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerview_cinema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

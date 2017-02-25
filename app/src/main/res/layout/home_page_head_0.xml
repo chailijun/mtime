@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/topAdvBanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:canLoop="true" />
+
+        <!--<EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/home_search_bg"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/home_scan"
+            android:focusable="false"
+            android:hint="@string/edit_hint"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorEditHint"
+            android:textSize="@dimen/text_size_14" />-->
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/home_search_bg"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/home_scan"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:text="@string/edit_hint"
+            android:textColor="@color/colorEditHint"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/hot_play_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

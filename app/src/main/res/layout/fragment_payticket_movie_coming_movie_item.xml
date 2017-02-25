@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/marginLeft"
+    android:paddingTop="20dp"
+    android:background="@drawable/item_onclick_bg_selector">
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/showtime_day"
+        android:textColor="@color/colorTitle2"
+        android:text="10日"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_14"/>
+
+    <ImageView
+        android:layout_marginLeft="40dp"
+        android:id="@+id/movie_img"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:background="@drawable/img_default"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignTop="@id/movie_img"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/movie_img">
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的名字。"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/want_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="250人想看-剧情/悬疑"
+            android:textColor="@color/colorTitle2"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:id="@+id/director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="导演"
+            android:textColor="@color/colorTitle2"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:id="@+id/btn_sale"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/movie_img"
+        android:layout_alignBottom="@id/movie_img"
+        android:background="@drawable/bt_solid_green_66"
+        android:text="超前预售"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14" />
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btn_trailer"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/btn_sale"
+        android:layout_alignBottom="@id/movie_img"
+        android:background="@drawable/bt_line_green_66"
+        android:text="预告片"
+        android:textColor="@color/colorBGYingping"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/movie_img"
+        android:background="@color/colorLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"/>
+
+</RelativeLayout>

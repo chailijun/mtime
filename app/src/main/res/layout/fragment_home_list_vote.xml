@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:id="@+id/tv_tag"
+        style="@style/TagStyle"
+        android:background="@color/colorBGBangdan"
+        tools:text="@string/bangdan" />
+
+    <TextView
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginTop"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:text="为你喜欢的电影/人物投上宝贵的一票"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"
+        android:background="@color/colorLine" />
+</LinearLayout>

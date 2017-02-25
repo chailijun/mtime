@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chailijun.mtime.moviedetail.MovieDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView
+            android:id="@+id/img_bg_head"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/actor_detail_top_background" />-->
+
+
+        <com.chailijun.mtime.customview.MyScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/movie_detail_head"
+                    layout="@layout/movie_detail_head" />
+
+                <com.chailijun.mtime.customview.MyTabLayout
+                    android:id="@+id/tabs"
+                    style="@style/MovieDetailTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tablayout_height"
+                    android:background="@android:color/white" />
+
+                <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </com.chailijun.mtime.customview.MyScrollView>
+
+        <com.chailijun.mtime.customview.MyTabLayout
+            android:id="@+id/tabs2"
+            style="@style/MovieDetailTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_height"
+            android:layout_marginTop="@dimen/head_height"
+            android:background="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <include layout="@layout/head_with_favorite_share" />
+    <!--<com.chailijun.mtime.customview.ToolsBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+    <include layout="@layout/activity_movie_detail_bottom" />
+
+</RelativeLayout>

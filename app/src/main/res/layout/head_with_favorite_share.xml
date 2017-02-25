@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/head_height"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/head_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHead"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+
+        <!--<TextView
+            android:id="@+id/head_title_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_12"
+            tools:text="your name" />-->
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/toolsBarSize"
+        android:layout_height="@dimen/toolsBarSize"
+        android:scaleType="center"
+        android:src="@drawable/title_btn_back_background" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="@dimen/toolsBarSize"
+        android:layout_height="@dimen/toolsBarSize"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        android:src="@drawable/title_bar_share" />
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="@dimen/toolsBarSize"
+        android:layout_height="@dimen/toolsBarSize"
+        android:layout_toLeftOf="@id/share"
+        android:scaleType="center"
+        android:src="@drawable/title_bar_favorite" />
+
+
+</RelativeLayout>

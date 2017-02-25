@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_news_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <!--<WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></WebView>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/icon_line_recycler_item_share"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/icon_line_recycler_item_share"
+        android:text="@string/Sharing_to_friend"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/share_wxfriend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/icon_wxfriend_recycler_item_share"
+            android:gravity="center_horizontal"
+            android:text="@string/wexin_friend"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/share_wxcircle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/icon_wxcircle_recycler_item_share"
+            android:gravity="center_horizontal"
+            android:text="@string/wexin_circle"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/share_xlweibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/icon_xlweibo_recycler_item_share"
+            android:gravity="center_horizontal"
+            android:text="@string/xlweibo"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/share_qqfriend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/icon_qqfriend_recycler_item_share"
+            android:gravity="center_horizontal"
+            android:text="@string/qqfriend"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

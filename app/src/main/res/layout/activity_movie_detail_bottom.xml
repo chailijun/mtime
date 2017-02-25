@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true"
+    tools:showIn="@layout/fragment_movie_detail">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_0dot8_dp"
+            android:background="@color/colorLine" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:paddingTop="4dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_10"
+                android:text="@string/wantseen"
+                android:drawableTop="@drawable/icon_wantseen"
+                android:layout_width="70dp"
+                android:layout_height="match_parent" />
+
+            <View
+
+                android:layout_width="@dimen/line_0dot8_dp"
+                android:layout_height="30dp"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:paddingTop="4dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_10"
+                android:text="@string/write_reviews"
+                android:drawableTop="@drawable/icon_write_comment"
+                android:layout_width="70dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_sale"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@android:color/white"
+        android:background="@color/colorOrange"
+        android:layout_weight="1"
+        android:text="@string/select_sale"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

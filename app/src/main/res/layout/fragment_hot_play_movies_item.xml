@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/marginTop"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <com.chailijun.mtime.customview.WithTagImageView
+            android:id="@+id/iv_movie_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/imageview_border"
+            android:padding="@dimen/line_1_dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/isNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:background="@drawable/img_home_new" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_titleCn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_14"
+        tools:text="奇异博士" />
+
+    <Button
+        android:id="@+id/btn_sale"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"
+        android:background="@drawable/bt_solid_green_66"
+        tools:text="@string/advance_sale" />
+
+</LinearLayout>

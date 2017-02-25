@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.SearchMovieActivity">
+
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_only_back" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head" />
+
+    <com.chailijun.mtime.customview.MyViewSwitcher
+        android:id="@+id/viewswitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:inAnimation="@anim/slide_in_top"
+        android:outAnimation="@anim/slide_out_top"
+        android:persistentDrawingCache="animation">
+
+        <include layout="@layout/activity_search_movie_head" />
+
+        <!--空布局，不可删除-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </com.chailijun.mtime.customview.MyViewSwitcher>
+
+
+</RelativeLayout>

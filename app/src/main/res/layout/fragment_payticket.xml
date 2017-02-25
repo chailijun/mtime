@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorHead"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_sale_tag"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/city_select_arrow"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            tools:text="上海" />
+
+        <com.chailijun.mtime.customview.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bk_titlebar_payticket"
+            app:drawable_switch="@drawable/bk_titlebar_payticket_item"
+            app:textLeft="@string/movie"
+            app:textRight="@string/cinema"
+            app:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/title_search_icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorHead"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/title_btn_back_background" />
+
+        <com.chailijun.mtime.customview.ClearEditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_comments_edit_background"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/title_bar_search_button_clear_background"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_hint2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorEditHint"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/search"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+</LinearLayout>

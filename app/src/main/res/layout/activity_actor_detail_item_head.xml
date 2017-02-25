@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_actor_detail_item_head_actor_background"/>
+    <include layout="@layout/activity_actor_detail_item_head_hot_movie"/>
+    <include layout="@layout/activity_actor_detail_item_head_main_movie"/>
+    <include layout="@layout/activity_actor_detail_item_head_awards"/>
+    <include layout="@layout/activity_actor_detail_item_head_actor_images"/>
+    <include layout="@layout/activity_actor_detail_item_head_actor_expriences"/>
+    <include layout="@layout/advlist_layout"/>
+
+</LinearLayout>

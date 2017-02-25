@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/img_default_300x200"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/titleEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backgroundImage"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_10"
+        tools:text="Captain America" />
+
+    <TextView
+        android:id="@+id/titleCn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleEn"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_18"
+        tools:text="美国队长系列" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_topic_sublist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingRight="@dimen/marginRight"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/more_product_bg"
+        android:drawableRight="@drawable/my_home_header_arrow"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/more_product"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14" />
+
+</LinearLayout>

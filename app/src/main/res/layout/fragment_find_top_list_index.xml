@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_default_300x200"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_img"
+        android:background="@drawable/translucent_bg"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20"
+        tools:text="The Playlist评21世纪50佳动画" />
+
+    <include layout="@layout/fragment_find_top_list_index_top100"
+        android:id="@+id/top100"/>
+
+    <View
+        android:layout_below="@id/top100"
+        android:background="@color/colorLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_1_dp"/>
+
+</RelativeLayout>

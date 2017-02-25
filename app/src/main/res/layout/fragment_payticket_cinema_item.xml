@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_onclick_bg_selector"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/img_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cinema_list_nearest_icon"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+
+    <TextView
+        android:id="@+id/cinema_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_tag"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16"
+        tools:text="上海万达" />
+
+    <TextView
+        android:id="@+id/min_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cinema_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="@dimen/marginRight"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/text_size_14"
+        tools:text="@string/min_price"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/cinema_address"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinema_name"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxEms="15"
+        android:maxLines="1"
+        android:textColor="@color/colorTitle2"
+        android:textSize="@dimen/text_size_14"
+        tools:text="上海市浦东新区xxxxxxx" />
+
+    <TextView
+        android:id="@+id/cinema_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinema_name"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/cinema_address"
+        android:maxLines="1"
+        android:textColor="@color/colorTitle2"
+        android:textSize="@dimen/text_size_14"
+        tools:text=">20km" />
+
+
+    <LinearLayout
+        android:id="@+id/cinema_feature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinema_address"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_vip"
+            android:layout_width="@dimen/cinemaFeatureSize"
+            android:layout_height="@dimen/cinemaFeatureSize"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cinemalist_vip"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_imax"
+            android:layout_width="@dimen/cinemaFeatureSize"
+            android:layout_height="@dimen/cinemaFeatureSize"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cinemalist_imax"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_parking"
+            android:layout_width="@dimen/cinemaFeatureSize"
+            android:layout_height="@dimen/cinemaFeatureSize"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cinemalist_parking"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_wififree"
+            android:layout_width="@dimen/cinemaFeatureSize"
+            android:layout_height="@dimen/cinemaFeatureSize"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cinemalist_wififree"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.chailijun.mtime.customview.BorderTextView
+            android:id="@+id/coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cinemaFeatureSize"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorLightRed"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="gone"
+            app:cornerRadius="1dp"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sale"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:layout_alignBottom="@id/cinema_feature"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bt_solid_orange_66"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone"
+        tools:text="@string/payticket"
+        tools:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot4_dp"
+        android:layout_below="@id/btn_sale"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLine" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/btn_sale"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLine3" />
+
+</RelativeLayout>

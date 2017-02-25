@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray_white">#DDDDDD</color>
+
+    <color name="colorHome">#0073C2</color>
+    <color name="colorHome2">#666666</color>
+    <!--自定义Dialog颜色-->
+    <color name="colorDialog">#F2F2F2</color>
+    <color name="colorDialog2">#D3D3D3</color>
+    <color name="colorDialogLine">#7f0d0061</color>
+
+    <!--Edit颜色-->
+    <color name="colorEditHint">#BBBBBB</color>
+
+    <color name="colorOrange">#FF8700</color>
+    <color name="colorLine">#D8D8D8</color>
+    <color name="colorLine2">#F2F2F2</color>
+    <color name="colorLine3">#EBEBEB</color>
+    <color name="colorBGTuji">#4B9EFD</color>
+    <color name="colorBGYingping">#629D0A</color>
+    <color name="colorBGJianxun">#4A9DFE</color>
+    <color name="colorBGGuessMovie">#F65054</color>
+    <color name="colorBGNewMovie">#FEAC01</color>
+    <color name="colorBGBangdan">#DD7948</color>
+    <color name="colorHead">#1C2635</color>
+    <color name="colorHeadTransparency">#001C2635</color>
+    <color name="colorCommentBG">#F6F6F6</color>
+
+    <!--文字颜色-->
+    <color name="colorTitle2">#666666</color>
+    <color name="colorTitle3">#55000000</color>
+    <color name="colorGrayText">#787878</color>
+    <color name="maybeLikeGoods">#999999</color>
+    <color name="colorBlueText">#0072C1</color>
+    <color name="colorMovieType">#798A9C</color>
+    <color name="colorLine4">#D7D7D7</color>
+    <color name="color_movie_event_num1_bg">#137CC3</color>
+    <color name="colorMoreInfo">#4BB7FF</color>
+    <color name="colorLightRed">#FF532C</color>
+
+    <!--半透明-->
+    <color name="partTranslucent">#39000000</color>
+
+    <color name="colorIndexTextColor">#05C0AB</color>
+    <color name="colorMallBG">#C3C3C3</color>
+    <color name="C_E87250">#E87250</color>
+    <color name="C_5683CC">#5683CC</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="half_black">#88000000</color>
+    <color name="black_alphaBB">#BB000000</color>
+    <color name="C_1498C9">#1498C9</color>
+    <color name="C_3BC7C2">#3BC7C2</color>
+    <color name="C_FFC12D">#FFC12D</color>
+    <color name="C_F6F6F6">#F6F6F6</color>
+    <color name="choose_movie_border">#0175C4</color>
+    <color name="hot_key_words">#C0E1FF</color>
+    <color name="red_border">#F45E4A</color>
+    <color name="blue_border">#27AAF2</color>
+    <color name="colorImgDefault">#EBEDF0</color>
+
+</resources>

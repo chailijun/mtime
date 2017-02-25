@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/goods_img"
+            tools:background="@drawable/img_default"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <TextView
+            android:id="@+id/goods_iconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_10"
+            tools:background="#25ACBD"
+            tools:text="新品" />
+
+        <TextView
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_below="@id/goods_img"
+            android:lines="2"
+            android:textColor="@android:color/black"
+            android:id="@+id/goods_title"
+            android:layout_marginTop="6dp"
+            android:textSize="@dimen/text_size_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="轻松小熊甜点纱布纯棉面巾"/>
+
+        <TextView
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_below="@id/goods_title"
+            android:textColor="@color/colorOrange"
+            android:id="@+id/goods_price"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥399"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

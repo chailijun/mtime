@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--电影梗概-->
+        <include layout="@layout/fragment_movie_detail_base_info_item_story" />
+
+        <!--演员和导演-->
+        <include layout="@layout/fragment_movie_detail_base_info_item_director" />
+
+        <!--相关视频和图片-->
+        <include layout="@layout/fragment_movie_detail_base_info_item_videoimage" />
+
+        <!--相关商品-->
+        <include layout="@layout/fragment_movie_detail_base_info_item_related" />
+
+        <!--短评-->
+        <include layout="@layout/fragment_movie_detail_base_info_item_hotcomment" />
+
+        <!--广告条-->
+        <include layout="@layout/advlist_layout" />
+
+        <!--影评-->
+        <include layout="@layout/fragment_movie_detail_base_info_item_plus" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

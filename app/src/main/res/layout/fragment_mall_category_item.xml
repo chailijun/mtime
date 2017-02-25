@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/divier"/>
+
+    <RelativeLayout
+        android:id="@+id/more_video"
+        android:paddingRight="@dimen/marginRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/tag"
+            android:layout_centerVertical="true"
+            tools:background="#ff0000"
+            android:layout_width="6dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="玩具模型"
+            android:textColor="@color/colorTitle2"
+            android:textSize="@dimen/text_size_16"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/my_home_center_arrow"
+            android:gravity="end"
+            android:text="@string/more"
+            android:textColor="@color/colorTitle2"
+            android:textSize="@dimen/text_size_15" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/category_img"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:scaleType="centerCrop"
+        tools:background="@drawable/img_default_300x200"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <View
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_0dot8_dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_subList"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:background="@drawable/img_default_45x45"
+                android:id="@+id/goods1_img"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:lines="2"
+                android:textColor="@android:color/black"
+                android:id="@+id/goods1_title"
+                android:layout_marginTop="6dp"
+                android:textSize="@dimen/text_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="现货 长城刺绣缎面夹克"/>
+
+            <TextView
+                android:textColor="@color/colorOrange"
+                android:id="@+id/goods1_price"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_size_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥399"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:background="@drawable/img_default_45x45"
+                android:id="@+id/goods2_img"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:lines="2"
+                android:textColor="@android:color/black"
+                android:id="@+id/goods2_title"
+                android:layout_marginTop="6dp"
+                android:textSize="@dimen/text_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="现货 长城刺绣缎面夹克"/>
+
+            <TextView
+                android:textColor="@color/colorOrange"
+                android:id="@+id/goods2_price"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_size_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥399"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:background="@drawable/img_default_45x45"
+                android:id="@+id/goods3_img"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:lines="2"
+                android:textColor="@android:color/black"
+                android:id="@+id/goods4_title"
+                android:layout_marginTop="6dp"
+                android:textSize="@dimen/text_size_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="现货 长城刺绣缎面夹克"/>
+
+            <TextView
+                android:textColor="@color/colorOrange"
+                android:id="@+id/goods3_price"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_size_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥399"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

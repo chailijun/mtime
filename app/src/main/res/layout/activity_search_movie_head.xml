@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="@dimen/marginLeft" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_genreTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/marginLeft" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_years"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/marginLeft" />
+
+    <include layout="@layout/activity_search_movie_head_bottom" />
+
+    <TextView
+        android:id="@+id/movie_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorCommentBG"
+        android:gravity="center_vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingTop="4dp"
+        android:textColor="@color/colorTitle2"
+        android:textSize="@dimen/text_size_12"
+        tools:text="@string/movie_total" />
+
+
+</LinearLayout>
